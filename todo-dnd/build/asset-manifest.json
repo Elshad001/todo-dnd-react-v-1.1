@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/todo-dnd-new/static/css/main.68a4ed45.css",
+    "main.js": "/todo-dnd-new/static/js/main.78a40846.js",
+    "index.html": "/todo-dnd-new/index.html",
+    "main.68a4ed45.css.map": "/todo-dnd-new/static/css/main.68a4ed45.css.map",
+    "main.78a40846.js.map": "/todo-dnd-new/static/js/main.78a40846.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.68a4ed45.css",
+    "static/js/main.78a40846.js"
+  ]
+}

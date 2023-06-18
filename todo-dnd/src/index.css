@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@400;500;600&family=Courgette&family=Playball&display=swap');
+*
+{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+@media screen and (min-width:520px){
+    body
+    {
+        width:100%;
+        height:100vh;
+        background-color: rgb(91, 212, 240);
+    }
+    .todo-title
+    {
+        margin-top:30px;
+        font-size:41px;
+        font-family:'Alkatra', cursive;
+        text-align: center;
+        color:#333;
+    }
+    .create
+    {
+        width:100%;
+        height:150px;
+    }
+    .create .form
+    {
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        height:100px;
+        padding:100px 33%;
+    }
+    .create-input
+    {
+        width:75%;
+        height:38px;
+        border:none;
+        border-radius:5px;
+        text-align:right;
+        padding-right:30px;
+    }
+    .create-btn
+    {
+        width:15%;
+        height:38px;
+        padding:2% 3%;
+        border: none;
+        border-radius:5px;
+        background-color: rgb(16, 199, 34);
+        font-family: sans-serif;
+        font-size:85%;
+        font-weight:500;
+        color:#333;
+    }
+    .create-btn:hover
+    {
+        background-color: rgb(9, 150, 37);
+        color:#ccc;
+    }
+    .lists
+    {
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        padding:5% 10%;
+    }
+    
+    .header-list
+    { 
+        display: flex;
+        justify-content: space-between;
+        width:100%;
+        height:50px;
+        padding:10px 30px;
+        border-radius:5px;
+        background-color: #566e92;
+        font-family:sans-serif;
+        font-size:22px;
+    
+    }
+    .task-box
+    {
+        width:30%;
+        min-height:200px;
+        border-radius:5px;
+        background-color: #eee;
+    }
+    .task-box-drag
+    {
+        width:30%;
+        min-height:200px;
+        border-radius:5px;
+        background-color: #99b3c6;
+    }
+    .task
+    {
+        display: flex;
+        justify-content: space-between;
+        width:95%;
+        min-height:45px;
+        margin:10px auto;
+        padding:5px 20px;
+        background-color: #abc9f3;
+        border-radius:5px;
+        color:#333;
+    }
+    .task-drag
+    {
+        display: flex;
+        justify-content: space-between;
+        width:95%;
+        min-height:45px;
+        margin:10px auto;
+        padding:5px 20px;
+        background-color: #c4d8f5;
+        border-radius:5px;
+        color:#333;
+    }
+    .task:hover
+    {
+        background-color:#66a6fa;
+    }
+    .task-content
+    {
+        font-family: 'Alkatra', cursive;
+        padding:0 10px;
+        word-break: break-all;
+    }
+    .task-content p:first-child
+    {
+        font-family: 'Alkatra', cursive;
+        font-size:25px;
+        word-break: break-all;
+    }
+    .task-content p:nth-child(2)
+    {
+        font-family: 'Alkatra', cursive;
+        font-size:15px;
+        word-break: break-all;
+        color:#0b3c5f
+    }
+    .task-icons
+    {
+        display: flex;
+        gap:10px;
+        justify-content: space-between;
+        width:auto;
+        height:45px;
+    }
+    .doing-icon
+    {
+        margin-top:7px;
+        font-size:28px;
+        color:#9a0808;
+    }
+    .done-icon
+    {
+        margin-top:9px;
+        font-size:30px;
+        color:rgb(15, 126, 57);
+    }
+    .del-icon
+    {
+        margin-top:9px;
+        font-size:27px;
+        color:#f44e4e;
+    }
+    .task-date
+    {
+        display: flex;
+        gap:5px;
+    }
+    .clock-icon
+    {
+        font-size:18px;
+        margin-top:2px;
+    }
+    .del-icon:hover
+    {
+        scale:110%;
+        color:#9a0808
+    }
+}
+
+
+@media screen and (max-width:519px)
+{
+    body
+{
+    width:100%;
+    height:100vh;
+    background-color:rgb(91, 212, 240);
+}
+.todo-title
+    {
+        margin-top:30px;
+        font-size:41px;
+        font-family:'Alkatra', cursive;
+        text-align: center;
+        color:#333;
+    }
+.create
+{
+    width:100%;
+    height:100px;
+  
+}
+.create .form
+{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:100px;
+    padding:50px 10%;
+}
+.create-input
+{
+    width:80%;
+    height:38px;
+    border:none;
+    border-radius:5px;
+    text-align:right;
+    padding-right:30px;
+}
+.create-btn
+{
+    width:15%;
+    height:38px;
+    padding:2% 3%;
+    border: none;
+    border-radius:5px;
+    background-color: rgb(13, 211, 32);
+    font-family: sans-serif;
+    font-size:85%;
+
+}
+.lists
+{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    padding:0 10%;
+}
+
+.header-list
+{ 
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    height:50px;
+    padding:10px 30px;
+    border-radius:5px;
+    background-color: #566e92;
+    font-family:sans-serif;
+    font-size:22px;
+
+}
+.task-box
+{
+    width:100%;
+    min-height:200px;
+    margin-top:20px;
+    border-radius:5px;
+    background-color: #eee;
+}
+.task
+{
+    display: flex;
+    justify-content: space-between;
+    width:95%;
+    min-height:45px;
+    margin:10px auto;
+    padding:5px 20px;
+    background-color: #abc9f3;
+    border-radius:5px;
+}
+.task:hover
+ {
+    background-color:#66a6fa;
+ }
+.task-content
+{
+    width:70%;
+    font-family: serif;
+    font-size:25px;
+    padding:0 15px;
+}
+.task-icons
+{
+    display: flex;
+    justify-content: space-between;
+    width:30%;
+    height:45px;
+}
+.del-icon
+{
+    margin-top:7px;
+    color:#f44e4e;
+}
+.del-icon:hover
+    {
+        scale:110%;
+        color:#9a0808
+    }
+}
