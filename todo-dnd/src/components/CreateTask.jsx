@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { v4 as uuidv4} from 'uuid'
 
 
-const CreateTask = ({setTasks}) => {
+const CreateTask = ({setTasks,darkMode}) => {
   
   const [task,setTask]= useState({
      id:'',
@@ -52,7 +52,7 @@ console.log(d)
            value={task.name}
            onChange={(e)=>setTask({...task,id: uuidv4(),name:e.target.value,date:d})}
          />
-        <button className='create-btn'>Create</button>
+        <button className={darkMode ? 'create-btn-dark' : 'create-btn'}>Create</button>
       </form>
     </div>
   )

@@ -1,5 +1,5 @@
-const Header = ({ text,count }) => {
-    return <div className="header-list">
+const Header = ({ text,count,darkMode}) => {
+    return <div className={darkMode ? "header-list-dark" : "header-list"}>
             {text}
           <div>{count}</div>
           </div>

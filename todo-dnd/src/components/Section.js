@@ -3,7 +3,7 @@ import Task from "./Task"
 import {useDrop } from 'react-dnd'
 
 
-const Section = ({ status,tasks,setTasks,todos,doing,done }) => {
+const Section = ({ status,tasks,setTasks,todos,doing,done,darkMode }) => {
   
     const [{isOver},drop] = useDrop(()=>
     ({
@@ -48,12 +48,13 @@ const Section = ({ status,tasks,setTasks,todos,doing,done }) => {
  
     return(
        <div ref={drop} className={isOver ? "task-box-drag" : "task-box"}>
-        <Header text={text} count={tasksToMap.length}/>
+        <Header text={text} count={tasksToMap.length} darkMode={darkMode}/>
         {tasksToMap.length >0 && tasksToMap.map(task=> <Task 
         key={task.id}
         task={task}
         tasks={tasks}
         setTasks={setTasks}
+        darkMode={darkMode}
         />)}
         </div>
     ) 

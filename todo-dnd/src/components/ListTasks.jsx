@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import Section from './Section'
 
-const ListTasks = ({ tasks, setTasks }) => {
+const ListTasks = ({ tasks, setTasks,darkMode}) => {
 
 
   const [todos, setTodos] = useState([])
@@ -26,7 +26,7 @@ const ListTasks = ({ tasks, setTasks }) => {
     <div className='lists'>
       {statuses.map((status, index) => <Section key={index} status={status}
         tasks={tasks} setTasks={setTasks}
-        todos={todos} doing={doing} done={done}
+        todos={todos} doing={doing} done={done} darkMode={darkMode}
       />)}
     </div>
   )
